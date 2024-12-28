@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Support Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="chat-container">
+        <div class="side">
+        <div class="img_cont">
+            <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img"/>
+            <span class="online_icon"></span>
+        </div>
+        <div class="chat-header"> <h1>Technical Support Bot</h1> </div>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <!-- Chat messages will be displayed here -->
+
+            <div class="chat-message-wrapper bot"></div>
+        
+            <!-- User message -->
+            <div class="chat-message-wrapper user"></div>
+        </div>
+        <div id="messageFormeight" class="card-body msg_card_body"></div>
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button onclick="sendMessage()"><i class="fa-brands fa-telegram"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
